@@ -1,0 +1,15 @@
+public class Solution {
+    public int[] SortedSquares(int[] nums) {
+       int nLen = nums.Length;
+           int[] squareArray = new int[nLen];
+
+        for(int i = 0; i < nLen; i++)
+        {
+            squareArray[i] = nums[i]*nums[i];
+        }
+
+        Array.Sort(squareArray);
+
+        return squareArray;
+    }
+}
